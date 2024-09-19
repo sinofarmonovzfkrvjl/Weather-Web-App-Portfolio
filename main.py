@@ -64,29 +64,26 @@ async def toshkent(request: Request):
 
 @app.get("/qashqadaryo", response_class=HTMLResponse)
 async def toshkent(request: Request):
-    # response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/qashqadaryo")
-    # minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
-    # maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
-    # weather = (int(minimum) + int(maximum)) // 2
-    weather = "ERROR"
+    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/qashqadaryo")
+    minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
+    maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
+    weather = (int(minimum) + int(maximum)) // 2
     return template.TemplateResponse("qashqadaryo.html", {"request": request, "weather": f"{weather}°"})
 
 @app.get("/qarshi", response_class=HTMLResponse)
 async def toshkent(request: Request):
-    # response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/qarshi")
-    # minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
-    # maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
-    # weather = (int(minimum) + int(maximum)) // 2
-    weather = "ERROR"
+    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/qarshi")
+    minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
+    maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
+    weather = (int(minimum) + int(maximum)) // 2
     return template.TemplateResponse("qarshi.html", {"request": request, "weather": f"{weather}°"})
 
 @app.get("/surxondaryo", response_class=HTMLResponse)
 async def toshkent(request: Request):
-    # response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/surxondaryo")
-    # minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
-    # maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
-    # weather = (int(minimum) + int(maximum)) // 2
-    weather = "ERROR"
+    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/surxondaryo")
+    minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
+    maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
+    weather = (int(minimum) + int(maximum)) // 2
     return template.TemplateResponse("surxondaryo.html", {"request": request, "weather": f"{weather}°"})
 
 @app.get("/navoiy", response_class=HTMLResponse)
