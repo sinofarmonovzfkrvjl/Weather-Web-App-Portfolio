@@ -4,16 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uzbekistan Weather Web Site</title>
-    <link rel="stylesheet" href="static/style.css">
     <link rel="website icon" href="/static/logo.png">
     <style>
-        #secret {
-            color: #353;
-            text-decoration: none;
-        }
-        #secret:hover {
-            text-decoration: underline;
-        }
+    #secret {
+        color: #353;
+        text-decoration: none;
+    }
+    #secret:hover {
+        text-decoration: underline;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    .navbar {
+        background-color: #333;
+    }
+
+    .container {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .container a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .container a h1 {
+        font-size: 50px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 100px;
+        max-width: 60%;
+        justify-content: space-between;
+        margin: auto;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+        border-radius: 0 0 30px 30px;
+    }
+
+    .buttons .first-section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .buttons .first-section span {
+        padding: 12px;
+    }
+
+    .buttons .first-section span a {
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 50px;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .buttons .second-section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .buttons .second-section span {
+        padding: 12px;
+    }
+
+    .buttons .second-section span a {
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 50px;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .buttons .third-section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .buttons .third-section span {
+        padding: 12px;
+    }
+
+    .buttons .third-section span a {
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 50px;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
     </style>
 </head>
 <body>
@@ -26,18 +123,66 @@
         </nav>
     </header>
     <main>
-        <div class="places">
-            <span class="for-padding"><a href="toshkent" class="toshkent">toshkent</a></span>
-            <span class="for-padding"><a href="andijon" class="andijon">andijon</a></span>
-            <span class="for-padding"><a href="samarqand" class="samarqand">samarqand</a></span>
-            <span class="for-padding"><a href="buxoro" class="buxoro">buxoro</a></span>
-            <span class="for-padding"><a href="jizzax" class="jizzax">jizzax</a></span>
-            <span class="for-padding"><a href="farg'ona" class="farg'ona">farg'ona</a></span>
-            <span class="for-padding"><a href="qashqadaryo" class="qashqadaryo">qashqadaryo</a></span>
-            <span class="for-padding"><a href="qarshi" class="qarshi">qarshi</a></span>
-            <span class="for-padding"><a href="surxondaryo" class="surxondaryo">surxondaryo</a></span>
-            <span class="for-padding"><a href="navoiy" class="navoiy">navoiy</a></span>
-            <span class="for-padding"><a href="nukus" class="nukus">nukus</a></span>
+        <div class="buttons">
+            <div class="first-section">
+                <span><a href="toshkent">Toshkent</a></span>
+                <span><a href="andijon">Andijon</a></span>
+                <span><a href="samarqand">Samarqand</a></span>
+                <span><a href="farg'ona">Farg'ona</a></span>
+                <span><a href="xiva">Xiva</a></span>
+                <span><a href="angren">Angren</a></span>
+                <span><a href="baliqchi">Baliqchi</a></span>
+                <span><a href="sirdaryo">Sirdaryo</a></span>
+                <span><a href="qashqadaryo">Qashqadaryo</a></span>
+                <span><a href="bekobod">Bekobod</a></span>
+                <span><a href="olmaliq">Olmaliq</a></span>
+                <span><a href="oltiariq">Oltiariq</a></span>
+                <span><a href="oltinsoy">Oltinsoy</a></span>
+                <span><a href="oqtosh">Oqtosh</a></span>
+                <span><a href="parkent">Parkent</a></span>
+                <span><a href="sherobod">Sherobod</a></span>
+                <span><a href="shofirkon">Shofirkon</a></span>
+            </div>
+            
+            <div class="second-section">
+                <span><a href="termiz">Termiz</a></span>
+                <span><a href="buxoro">Buxoro</a></span>
+                <span><a href="guliston">Guliston</a></span>
+                <span><a href="jizzax">Jizzax</a></span>
+                <span><a href="zarafshon">Zarafshon</a></span>
+                <span><a href="bog'ot">Bog'ot</a></span>
+                <span><a href="bulung'ur">Bulung'ur</a></span>
+                <span><a href="denov">Denov</a></span>
+                <span><a href="chiroqchi">Chiroqchi</a></span>
+                <span><a href="dehqonobod">Dehqonobod</a></span>
+                <span><a href="ishtixon">Ishtixon</a></span>
+                <span><a href="payariq">Payariq</a></span>
+                <span><a href="qamashi">Qamashi</a></span>
+                <span><a href="qumqo'rg'on">Qumqo'rg'on</a></span>
+                <span><a href="qo'qon">Qo'qon</a></span>
+                <span><a href="kitob">Kitob</a></span>
+                <span><a href="uchquduq">Uchquduq</a></span>
+            </div>
+            
+            <div class="third-section">
+                <span><a href="surxondaryo">Surxondaryo</a></span>
+                <span><a href="qarshi">Qarshi</a></span>
+                <span><a href="navoiy">Navoiy</a></span>
+                <span><a href="namangan">Namangan</a></span>
+                <span><a href="nukus">Nukus</a></span>
+                <span><a href="jondor">Jondor</a></span>
+                <span><a href="kokand">Kokand</a></span>
+                <span><a href="koson">Koson</a></span>
+                <span><a href="marg'ilon">Marg'ilon</a></span>
+                <span><a href="nurobod">Nurobod</a></span>
+                <span><a href="quva">Quva</a></span>
+                <span><a href="rishton">Rishton</a></span>
+                <span><a href="romitan">Romitan</a></span>
+                <span><a href="shahrisabz">Shahrisabz</a></span>
+                <span><a href="urgut">Urgut</a></span>
+                <span><a href="urganch">Urganch</a></span>
+            </div>
+            
         </div>
     </main>
 </body>
