@@ -6,13 +6,13 @@
     <title>Uzbekistan Weather Web Site</title>
     <link rel="website icon" href="/static/logo.png">
     <style>
-    #secret {
-        color: #353;
+    /* #secret {
+        color: white;
         text-decoration: none;
     }
     #secret:hover {
         text-decoration: underline;
-    }
+    } */
 
     * {
         margin: 0;
@@ -111,12 +111,41 @@
         padding-right: 40px;
         padding-left: 40px;
     }
+
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 40px;
+    }
+
+    footer .extra-info {
+        padding:10px;
+    }
+
+    footer .extra-info a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+    }
+
+    footer .extra-info a:hover {
+        text-decoration: underline;
+    }
+
+    @media screen and (max-width: 600px) {
+        .buttons {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            padding: 10px;
+        }
+    }
     </style>
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <a href="api" id="secret">api</a>
             <div class="container">
                 <a href="#"><h1>O'zbekiston Ob Havosi</h1></a>
             </div>
@@ -185,5 +214,13 @@
             
         </div>
     </main>
+    <footer>
+        <p>Copyright &copy; 2024. O'zbekiston Ob Havosi</p>
+        <div class="extra-info">
+            <a href="api" id="secret">API</a> ●
+            <a href="https://t.me/obhavo_malumotlaribot" target="_blank">Telegram Botimiz</a> ●
+            <a href="https://t.me/sinofarmonov">Admin</a>
+        </div>
+    </footer>
 </body>
 </html>

@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-}z
+}
 
 .navbar {
     background-color: #333;
@@ -45,4 +45,8 @@
     color: black;
     font-size: 30px;
     padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    
 }
