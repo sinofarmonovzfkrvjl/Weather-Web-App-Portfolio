@@ -25,7 +25,7 @@ async def root(request: Request):
 
 @app.get("/toshkent", response_class=HTMLResponse)
 async def toshkent(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/toshkent", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/toshkent", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -33,7 +33,7 @@ async def toshkent(request: Request):
 
 @app.get("/andijon", response_class=HTMLResponse)
 async def toshkent(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/andijon", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/andijon", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -41,7 +41,7 @@ async def toshkent(request: Request):
 
 @app.get("/samarqand", response_class=HTMLResponse)
 async def toshkent(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/samarqand", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/samarqand", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -51,7 +51,7 @@ async def toshkent(request: Request):
 
 @app.get("/jizzax", response_class=HTMLResponse)
 async def toshkent(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/jizzax", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/jizzax", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -59,7 +59,7 @@ async def toshkent(request: Request):
 
 @app.get("/farg'ona", response_class=HTMLResponse)
 async def toshkent(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/farg'ona", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/farg'ona", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -67,7 +67,7 @@ async def toshkent(request: Request):
 
 @app.get("/qashqadaryo", response_class=HTMLResponse)
 async def toshkent(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/qashqadaryo", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/qashqadaryo", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -75,7 +75,7 @@ async def toshkent(request: Request):
 
 @app.get("/qarshi", response_class=HTMLResponse)
 async def toshkent(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/qarshi", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/qarshi", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -83,7 +83,7 @@ async def toshkent(request: Request):
 
 @app.get("/surxondaryo", response_class=HTMLResponse)
 async def toshkent(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/surxondaryo", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/surxondaryo", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -91,7 +91,7 @@ async def toshkent(request: Request):
 
 @app.get("/navoiy", response_class=HTMLResponse)
 async def toshkent(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/navoiy", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/navoiy", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -99,7 +99,7 @@ async def toshkent(request: Request):
 
 @app.get("/nukus", response_class=HTMLResponse)
 async def toshkent(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/nukus", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/nukus", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -107,7 +107,7 @@ async def toshkent(request: Request):
 
 @app.get("/xiva", response_class=HTMLResponse)
 async def toshkent(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/xiva", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/xiva", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -115,7 +115,7 @@ async def toshkent(request: Request):
 
 @app.get("/baliqchi", response_class=HTMLResponse)
 async def baliqchi(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/baliqchi", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/baliqchi", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -123,7 +123,7 @@ async def baliqchi(request: Request):
 
 @app.get("/sirdaryo", response_class=HTMLResponse)
 async def sirdaryo(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/sirdaryo", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/sirdaryo", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -131,7 +131,7 @@ async def sirdaryo(request: Request):
 
 @app.get("/bekobod", response_class=HTMLResponse)
 async def bekobod(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/bekobod", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/bekobod", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -139,7 +139,7 @@ async def bekobod(request: Request):
 
 @app.get("/olmaliq", response_class=HTMLResponse)
 async def olmaliq(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/olmaliq", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/olmaliq", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -147,7 +147,7 @@ async def olmaliq(request: Request):
 
 @app.get("/oltiariq", response_class=HTMLResponse)
 async def oltiariq(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/oltiariq", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/oltiariq", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -155,7 +155,7 @@ async def oltiariq(request: Request):
 
 @app.get("/oltinsoy", response_class=HTMLResponse)
 async def oltinsoy(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/oltinsoy", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/oltinsoy", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -163,7 +163,7 @@ async def oltinsoy(request: Request):
 
 @app.get("/oqtosh", response_class=HTMLResponse)
 async def oqtosh(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/oqtosh", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/oqtosh", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -171,7 +171,7 @@ async def oqtosh(request: Request):
 
 @app.get("/parkent", response_class=HTMLResponse)
 async def parkent(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/parkent", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/parkent", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -179,7 +179,7 @@ async def parkent(request: Request):
 
 @app.get("/parkent", response_class=HTMLResponse)
 async def parkent(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/parkent", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/parkent", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -187,7 +187,7 @@ async def parkent(request: Request):
 
 @app.get("/sherobod", response_class=HTMLResponse)
 async def sherobod(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/sherobod", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/sherobod", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -195,7 +195,7 @@ async def sherobod(request: Request):
 
 @app.get("/shofirkon", response_class=HTMLResponse)
 async def shofirkon(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/shofirkon", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/shofirkon", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -203,7 +203,7 @@ async def shofirkon(request: Request):
 
 @app.get("/termiz", response_class=HTMLResponse)
 async def termiz(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/termiz", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/termiz", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -211,7 +211,7 @@ async def termiz(request: Request):
 
 @app.get("/zarafshon", response_class=HTMLResponse)
 async def zarafshon(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/zarafshon", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/zarafshon", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -219,7 +219,7 @@ async def zarafshon(request: Request):
 
 @app.get("/buxoro", response_class=HTMLResponse)
 async def buxoro(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/buxoro", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/buxoro", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -227,7 +227,7 @@ async def buxoro(request: Request):
 
 @app.get("/guliston", response_class=HTMLResponse)
 async def guliston(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/guliston", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/guliston", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -235,7 +235,7 @@ async def guliston(request: Request):
 
 @app.get("/bog'ot", response_class=HTMLResponse)
 async def bogot(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/bog'ot", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/bog'ot", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -243,7 +243,7 @@ async def bogot(request: Request):
 
 @app.get("/bulung'ur", response_class=HTMLResponse)
 async def bulungur(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/bulung'ur", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/bulung'ur", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -251,7 +251,7 @@ async def bulungur(request: Request):
 
 @app.get("/denov", response_class=HTMLResponse)
 async def denov(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/denov", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/denov", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -259,7 +259,7 @@ async def denov(request: Request):
 
 @app.get("/chiroqchi", response_class=HTMLResponse)
 async def chiroqchi(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/chiroqchi", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/chiroqchi", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -267,7 +267,7 @@ async def chiroqchi(request: Request):
 
 @app.get("/dehqonobod", response_class=HTMLResponse)
 async def dehqonobod(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/dehqonobod", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/dehqonobod", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -275,7 +275,7 @@ async def dehqonobod(request: Request):
 
 @app.get("/ishtixon", response_class=HTMLResponse)
 async def ishtixon(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/ishtixon", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/ishtixon", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -283,7 +283,7 @@ async def ishtixon(request: Request):
 
 @app.get("/payariq", response_class=HTMLResponse)
 async def payariq(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/payariq", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/payariq", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -291,7 +291,7 @@ async def payariq(request: Request):
 
 @app.get("/qamashi", response_class=HTMLResponse)
 async def dehqonobod(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/qamashi", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/qamashi", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -299,7 +299,7 @@ async def dehqonobod(request: Request):
 
 @app.get("/qumqo'rg'on", response_class=HTMLResponse)
 async def qumqorgon(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/qumqo'rg'on", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/qumqo'rg'on", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -307,7 +307,7 @@ async def qumqorgon(request: Request):
 
 @app.get("/qo'qon", response_class=HTMLResponse)
 async def qoqon(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/qo'qon", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/qo'qon", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -315,7 +315,7 @@ async def qoqon(request: Request):
 
 @app.get("/kitob", response_class=HTMLResponse)
 async def kitob(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/kitob", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/kitob", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -323,7 +323,7 @@ async def kitob(request: Request):
 
 @app.get("/jondor", response_class=HTMLResponse)
 async def jondor(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/jondor", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/jondor", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -331,7 +331,7 @@ async def jondor(request: Request):
 
 @app.get("/kokand", response_class=HTMLResponse)
 async def kokand(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/kokand", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/kokand", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -339,7 +339,7 @@ async def kokand(request: Request):
 
 @app.get("/koson", response_class=HTMLResponse)
 async def koson(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/koson", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/koson", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -347,7 +347,7 @@ async def koson(request: Request):
 
 @app.get("/marg'ilon", response_class=HTMLResponse)
 async def margilon(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/marg'ilon", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/marg'ilon", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -355,7 +355,7 @@ async def margilon(request: Request):
 
 @app.get("/nurobod", response_class=HTMLResponse)
 async def nurobod(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/nurobod", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/nurobod", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -363,7 +363,7 @@ async def nurobod(request: Request):
 
 @app.get("/quva", response_class=HTMLResponse)
 async def quva(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/quva", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/quva", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -371,7 +371,7 @@ async def quva(request: Request):
 
 @app.get("/rishton", response_class=HTMLResponse)
 async def rishton(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/rishton", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/rishton", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -379,7 +379,7 @@ async def rishton(request: Request):
 
 @app.get("/romitan", response_class=HTMLResponse)
 async def romitan(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/romitan", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/romitan", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -387,7 +387,7 @@ async def romitan(request: Request):
 
 @app.get("/shahrisabz", response_class=HTMLResponse)
 async def shahrisabz(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/shahrisabz", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/shahrisabz", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -395,7 +395,7 @@ async def shahrisabz(request: Request):
 
 @app.get("/urgut", response_class=HTMLResponse)
 async def urgut(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/urgut", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/urgut", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -403,7 +403,7 @@ async def urgut(request: Request):
 
 @app.get("/urganch", response_class=HTMLResponse)
 async def urganch(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/urganch", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/urganch", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -411,7 +411,7 @@ async def urganch(request: Request):
 
 @app.get("/uchquduq", response_class=HTMLResponse)
 async def uchquduq(request: Request):
-    response = requests.get("https://ob-havo-api-y572.onrender.com/api/v1/obhavo/uchquduq", params={'day': 'today'})
+    response = requests.get("https://ob-havo-api.vercel.app/api/v1/obhavo/uchquduq", params={'day': 'today'})
     minimum = str(response.json()[0]['bugun'][0]['harorat'][0]['min']).replace('°', '')
     maximum = str(response.json()[0]['bugun'][0]['harorat'][1]['max']).replace('°', '')
     weather = (int(minimum) + int(maximum)) // 2
@@ -421,6 +421,6 @@ async def uchquduq(request: Request):
 async def api():
     html = """
 Bu O'zbekiston Ob havosini topuvchi API <br>
-<a href="https://ob-havo-api-y572.onrender.com" target="_blank">https://ob-havo-api-y572.onrender.com</a>
+<a href="https://ob-havo-api.vercel.app/v" target="_blank">https://ob-havo-api.vercel.app/</a>
 """
     return HTMLResponse(html)
